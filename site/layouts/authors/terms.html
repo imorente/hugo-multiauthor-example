@@ -1,0 +1,6 @@
+{{ define "main" }}
+  <h1>Authors</h1>
+  {{ range .Data.Pages }}
+    {{ partial "author-figure" . }}
+  {{ end }}
+{{ end }}
