@@ -1,9 +1,10 @@
 # Multi-author example Hugo site
 
-Ever wondered how to create an author page in [Hugo](https://gohugo.io/) that displays
-the author’s name, their bio, and a list of their articles, like Wordpress does?
+Ever wondered how to create an author page in [Hugo](https://gohugo.io/) that
+displays the author’s name, their bio, and a list of their articles, like
+Wordpress does? Me too!
 
-Me too! This repository is an example site based on the
+This repository is an example site based on the
 [Victor Hugo](https://github.com/netlify/victor-hugo) boilerplate that shows
 how it can be done.
 
