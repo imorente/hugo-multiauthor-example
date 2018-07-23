@@ -1,6 +1,16 @@
 {{ define "main" }}
 
-<h1>Cupcake Ipsum</h1>
+<h1>Multi-author Hugo example</h1>
+<p>
+  Ever wondered how to create an author page in <a href="https://gohugo.io/">Hugo</a>
+  that displays the author’s name, their bio, and a list of their articles,
+  like Wordpress does?
+</p>
+<p>
+  This example site shows how it can be done. You can
+  <a href="https://github.com/imorente/hugo-multiauthor-example">browse the code
+    on GitHub</a>.
+</p>
 
 <h2>All Articles</h2>
 {{ range where .Data.Pages "Type" "posts" }}
