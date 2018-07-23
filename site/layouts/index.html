@@ -1,9 +1,10 @@
 {{ define "main" }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+<h1>Cupcake Ipsum</h1>
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+<h2>All Articles</h2>
+{{ range where .Data.Pages "Type" "posts" }}
+  {{ .Render "article" }}
+{{ end }}
 
-{{end}}
+{{ end }}

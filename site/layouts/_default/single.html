@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p>
+      By {{ .Render "author-link" }}
+    </p>
+  </header>
+  {{ .Content }}
+  <footer>
+    {{ .Render "author-figure" }}
+  </footer>
+</article>
+
+{{ end }}

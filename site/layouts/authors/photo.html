@@ -1,0 +1,10 @@
+{{- with .Params.photo_url }}
+<figure>
+  <img src="{{ . }}" alt="">
+  {{- with $.Params.photo_credit }}
+  <figcaption>
+    <em>Photo credit {{ . | markdownify }}</a></em>
+  </figcaption>
+  {{ end }}
+</figure>
+{{ end }}
