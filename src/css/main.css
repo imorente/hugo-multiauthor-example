@@ -20,6 +20,11 @@ body {
   color: rgba(0, 0, 0, 0.87);
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
 }
@@ -27,8 +32,44 @@ img {
 h1, h2, h3 {
   margin-top: 2em;
   margin-bottom: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0.5em 0 2em;
 }
 
 figure {
   margin: 2em auto;
+  overflow: hidden;
+}
+
+figure img {
+  float: left;
+  margin: 1em 2em 1em 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
+figcaption p {
+  margin: 1em 0;
+}
+
+.byline {
+  font-size: 0.8em;
+  margin-top: -1em;
 }

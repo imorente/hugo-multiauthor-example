@@ -12,7 +12,7 @@
     on GitHub</a>.
 </p>
 
-<h2>All Articles</h2>
+<h2>All articles</h2>
 {{ range where .Data.Pages "Type" "posts" }}
   {{ .Render "article" }}
 {{ end }}

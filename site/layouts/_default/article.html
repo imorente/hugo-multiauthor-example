@@ -1,7 +1,7 @@
 <article>
   <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  <p>
+  <p>{{ .Summary | truncate 200 }}</p>
+  <p class="byline">
     by {{ .Render "author-link" }}
   </p>
-  <p>{{ .Summary | truncate 200 }}</p>
 </article>
