@@ -1,0 +1,17 @@
+{{- range .Params.authors }}
+  {{- with $.Site.GetPage "taxonomyTerm" "authors" (urlize .) }}
+    <figure>
+      <a href="{{ .Permalink }}">
+        <img src="{{ .Params.avatar }}" alt="{{ .Params.name }}" />
+      </a>
+      <figcaption>
+        <p>
+          {{ .Summary }}
+        </p>
+        <p>
+          <a href="{{ .Permalink }}">More about {{ .Params.name }}</a>
+        </p>
+      </figcaption>
+    </figure>
+  {{ end }}
+{{ end }}
